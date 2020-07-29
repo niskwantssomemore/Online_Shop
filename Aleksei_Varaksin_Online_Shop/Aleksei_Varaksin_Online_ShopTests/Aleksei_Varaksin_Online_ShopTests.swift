@@ -7,16 +7,21 @@
 //
 
 import XCTest
+import Alamofire
 @testable import Aleksei_Varaksin_Online_Shop
 
 class Aleksei_Varaksin_Online_ShopTests: XCTestCase {
+    
+    var errorParser: ErrorParser!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        errorParser = ErrorParser()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+        errorParser = nil
     }
 
     func testExample() {
@@ -28,6 +33,58 @@ class Aleksei_Varaksin_Online_ShopTests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+        }
+    }
+    
+    func testLogin() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.login(userName: "test", password: "123456") { (response: DataResponse<LoginResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testLogout() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.logout(userId: 1) { (response: DataResponse<CommonResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testRegister() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.registerUser(userId: 1, userName: "test", password: "123456", email: "test@test.ru", gender: "Male", creditCard: "1234567887654321", bio: "Bio") { (response: DataResponse<RegisterResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testChangeUserData() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.changeUserData(userId: 1, userName: "test", password: "123456", email: "test@test.ru", gender: "Male", creditCard: "1234567887654321", bio: "Bio") { (response: DataResponse<CommonResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
         }
     }
 
