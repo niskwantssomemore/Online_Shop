@@ -1,0 +1,6 @@
+framework module Pods_Aleksei_Varaksin_Online_ShopTests {
+  umbrella header "Pods-Aleksei_Varaksin_Online_ShopTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

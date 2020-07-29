@@ -3,16 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41063AC624D1766600D89654 /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41063AC524D1766600D89654 /* RegisterResult.swift */; };
+		41063AC824D1768B00D89654 /* CommonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41063AC724D1768B00D89654 /* CommonResult.swift */; };
 		412DA68E24C7B09A00D8A27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DA68D24C7B09A00D8A27A /* AppDelegate.swift */; };
 		412DA69024C7B09A00D8A27A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DA68F24C7B09A00D8A27A /* SceneDelegate.swift */; };
 		412DA69724C7B09B00D8A27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412DA69624C7B09B00D8A27A /* Assets.xcassets */; };
 		412DA69A24C7B09B00D8A27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412DA69824C7B09B00D8A27A /* LaunchScreen.storyboard */; };
 		412DA6A524C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DA6A424C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopTests.swift */; };
 		412DA6B024C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DA6AF24C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopUITests.swift */; };
+		41A552EB24CC36C000903A40 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552EA24CC36C000903A40 /* LoginResult.swift */; };
+		41A552ED24CC36D300903A40 /* ​User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552EC24CC36D300903A40 /* ​User.swift */; };
+		41A552F024CC38A700903A40 /* ​AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552EF24CC38A700903A40 /* ​AuthRequestFactory.swift */; };
+		41A552F224CC39FB00903A40 /* ​Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552F124CC39FB00903A40 /* ​Auth.swift */; };
+		41A552F424CC3C7600903A40 /* ​RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552F324CC3C7600903A40 /* ​RequestFactory.swift */; };
+		41A552F724CC3F0700903A40 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552F624CC3F0700903A40 /* AbstractErrorParser.swift */; };
+		41A552F924CC3F8000903A40 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552F824CC3F8000903A40 /* ErrorParser.swift */; };
+		41A552FB24CC408700903A40 /* ResponseCodable​.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552FA24CC408700903A40 /* ResponseCodable​.swift */; };
+		41A552FD24CC430B00903A40 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552FC24CC430B00903A40 /* AbstractRequestFactory.swift */; };
+		41A552FF24CC44A600903A40 /* ​RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552FE24CC44A600903A40 /* ​RequestRouter.swift */; };
+		7FBC0DF00345FB1D34771DB9 /* Pods_Aleksei_Varaksin_Online_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FD38ED4EE283297E6589F6 /* Pods_Aleksei_Varaksin_Online_Shop.framework */; };
+		CFAE7616E23FD724749B342F /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9FA82FE448AC199C38F208 /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework */; };
+		EBE51E41EB35D5C6EA90D04E /* Pods_Aleksei_Varaksin_Online_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BA58B527B0A31042CB59A9 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159BAFB7B0F00F61CE2C6DAB /* Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig"; sourceTree = "<group>"; };
+		1B14A4C443835A4B0D4DA386 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32FD38ED4EE283297E6589F6 /* Pods_Aleksei_Varaksin_Online_Shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aleksei_Varaksin_Online_Shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41063AC524D1766600D89654 /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = SOURCE_ROOT; };
+		41063AC724D1768B00D89654 /* CommonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResult.swift; sourceTree = SOURCE_ROOT; };
 		412DA68A24C7B09A00D8A27A /* Aleksei_Varaksin_Online_Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aleksei_Varaksin_Online_Shop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		412DA68D24C7B09A00D8A27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		412DA68F24C7B09A00D8A27A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +65,22 @@
 		412DA6AB24C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aleksei_Varaksin_Online_ShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412DA6AF24C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aleksei_Varaksin_Online_ShopUITests.swift; sourceTree = "<group>"; };
 		412DA6B124C7B09C00D8A27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A552EA24CC36C000903A40 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginResult.swift; path = Aleksei_Varaksin_Online_Shop/App/LoginResult.swift; sourceTree = SOURCE_ROOT; };
+		41A552EC24CC36D300903A40 /* ​User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "​User.swift"; path = "Aleksei_Varaksin_Online_Shop/App/​User.swift"; sourceTree = SOURCE_ROOT; };
+		41A552EF24CC38A700903A40 /* ​AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "​AuthRequestFactory.swift"; path = "Aleksei_Varaksin_Online_Shop/App/​AuthRequestFactory.swift"; sourceTree = SOURCE_ROOT; };
+		41A552F124CC39FB00903A40 /* ​Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "​Auth.swift"; path = "Aleksei_Varaksin_Online_Shop/App/​Auth.swift"; sourceTree = SOURCE_ROOT; };
+		41A552F324CC3C7600903A40 /* ​RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "​RequestFactory.swift"; path = "Aleksei_Varaksin_Online_Shop/App/​RequestFactory.swift"; sourceTree = SOURCE_ROOT; };
+		41A552F624CC3F0700903A40 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		41A552F824CC3F8000903A40 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		41A552FA24CC408700903A40 /* ResponseCodable​.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseCodable​.swift"; sourceTree = "<group>"; };
+		41A552FC24CC430B00903A40 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
+		41A552FE24CC44A600903A40 /* ​RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "​RequestRouter.swift"; sourceTree = "<group>"; };
+		43D6763FA694F965221F96E8 /* Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_ShopTests/Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61A4C38E179E5A5217A44F5F /* Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig"; sourceTree = "<group>"; };
+		6418368D158E87A738C46A03 /* Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_ShopTests/Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C9FA82FE448AC199C38F208 /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2AC6C7CD88CB4C8AB1F4BE4 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.release.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C3BA58B527B0A31042CB59A9 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aleksei_Varaksin_Online_ShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBC0DF00345FB1D34771DB9 /* Pods_Aleksei_Varaksin_Online_Shop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE51E41EB35D5C6EA90D04E /* Pods_Aleksei_Varaksin_Online_ShopTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +104,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAE7616E23FD724749B342F /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0938249E00F75412971C8585 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61A4C38E179E5A5217A44F5F /* Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig */,
+				159BAFB7B0F00F61CE2C6DAB /* Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig */,
+				1B14A4C443835A4B0D4DA386 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig */,
+				C2AC6C7CD88CB4C8AB1F4BE4 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.release.xcconfig */,
+				43D6763FA694F965221F96E8 /* Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig */,
+				6418368D158E87A738C46A03 /* Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		412DA68124C7B09A00D8A27A = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +131,8 @@
 				412DA6A324C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopTests */,
 				412DA6AE24C7B09C00D8A27A /* Aleksei_Varaksin_Online_ShopUITests */,
 				412DA68B24C7B09A00D8A27A /* Products */,
+				0938249E00F75412971C8585 /* Pods */,
+				928F868B390A27D3969C7D88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +191,7 @@
 		412DA6BE24C7B1AD00D8A27A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				41A552F524CC3EF700903A40 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -161,6 +216,7 @@
 		412DA6C124C7B26500D8A27A /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				41A552EE24CC388000903A40 /* Network */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -168,6 +224,10 @@
 		412DA6C224C7B29100D8A27A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				41A552EC24CC36D300903A40 /* ​User.swift */,
+				41A552EA24CC36C000903A40 /* LoginResult.swift */,
+				41063AC524D1766600D89654 /* RegisterResult.swift */,
+				41063AC724D1768B00D89654 /* CommonResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -186,6 +246,39 @@
 			path = Flows;
 			sourceTree = "<group>";
 		};
+		41A552EE24CC388000903A40 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				41A552EF24CC38A700903A40 /* ​AuthRequestFactory.swift */,
+				41A552F124CC39FB00903A40 /* ​Auth.swift */,
+				41A552F324CC3C7600903A40 /* ​RequestFactory.swift */,
+			);
+			name = Network;
+			path = Aleksei_Varaksin_Online_Shop/App/BusinessLogic/Network;
+			sourceTree = "<group>";
+		};
+		41A552F524CC3EF700903A40 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				41A552F624CC3F0700903A40 /* AbstractErrorParser.swift */,
+				41A552F824CC3F8000903A40 /* ErrorParser.swift */,
+				41A552FA24CC408700903A40 /* ResponseCodable​.swift */,
+				41A552FC24CC430B00903A40 /* AbstractRequestFactory.swift */,
+				41A552FE24CC44A600903A40 /* ​RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		928F868B390A27D3969C7D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32FD38ED4EE283297E6589F6 /* Pods_Aleksei_Varaksin_Online_Shop.framework */,
+				8C9FA82FE448AC199C38F208 /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework */,
+				C3BA58B527B0A31042CB59A9 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412DA6B424C7B09C00D8A27A /* Build configuration list for PBXNativeTarget "Aleksei_Varaksin_Online_Shop" */;
 			buildPhases = (
+				F77F04FF6A9E9718734DD11C /* [CP] Check Pods Manifest.lock */,
 				412DA68624C7B09A00D8A27A /* Sources */,
 				412DA68724C7B09A00D8A27A /* Frameworks */,
 				412DA68824C7B09A00D8A27A /* Resources */,
+				0F7FCF4966E65087A4215DF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412DA6B724C7B09C00D8A27A /* Build configuration list for PBXNativeTarget "Aleksei_Varaksin_Online_ShopTests" */;
 			buildPhases = (
+				83A333873C04DBA1B93664F2 /* [CP] Check Pods Manifest.lock */,
 				412DA69C24C7B09C00D8A27A /* Sources */,
 				412DA69D24C7B09C00D8A27A /* Frameworks */,
 				412DA69E24C7B09C00D8A27A /* Resources */,
@@ -228,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412DA6BA24C7B09C00D8A27A /* Build configuration list for PBXNativeTarget "Aleksei_Varaksin_Online_ShopUITests" */;
 			buildPhases = (
+				4683F9BCEA4CCB6CB61C7EE7 /* [CP] Check Pods Manifest.lock */,
 				412DA6A724C7B09C00D8A27A /* Sources */,
 				412DA6A824C7B09C00D8A27A /* Frameworks */,
 				412DA6A924C7B09C00D8A27A /* Resources */,
+				152EEDC59F78AF969EC96FB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,13 +409,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F7FCF4966E65087A4215DF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		152EEDC59F78AF969EC96FB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4683F9BCEA4CCB6CB61C7EE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83A333873C04DBA1B93664F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aleksei_Varaksin_Online_ShopTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77F04FF6A9E9718734DD11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aleksei_Varaksin_Online_Shop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		412DA68624C7B09A00D8A27A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A552FD24CC430B00903A40 /* AbstractRequestFactory.swift in Sources */,
+				41063AC824D1768B00D89654 /* CommonResult.swift in Sources */,
+				41A552F424CC3C7600903A40 /* ​RequestFactory.swift in Sources */,
+				41A552ED24CC36D300903A40 /* ​User.swift in Sources */,
+				41A552EB24CC36C000903A40 /* LoginResult.swift in Sources */,
 				412DA68E24C7B09A00D8A27A /* AppDelegate.swift in Sources */,
+				41063AC624D1766600D89654 /* RegisterResult.swift in Sources */,
+				41A552F924CC3F8000903A40 /* ErrorParser.swift in Sources */,
+				41A552F224CC39FB00903A40 /* ​Auth.swift in Sources */,
 				412DA69024C7B09A00D8A27A /* SceneDelegate.swift in Sources */,
+				41A552FF24CC44A600903A40 /* ​RequestRouter.swift in Sources */,
+				41A552FB24CC408700903A40 /* ResponseCodable​.swift in Sources */,
+				41A552F024CC38A700903A40 /* ​AuthRequestFactory.swift in Sources */,
+				41A552F724CC3F0700903A40 /* AbstractErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +693,7 @@
 		};
 		412DA6B524C7B09C00D8A27A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61A4C38E179E5A5217A44F5F /* Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +711,7 @@
 		};
 		412DA6B624C7B09C00D8A27A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159BAFB7B0F00F61CE2C6DAB /* Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +729,7 @@
 		};
 		412DA6B824C7B09C00D8A27A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D6763FA694F965221F96E8 /* Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +751,7 @@
 		};
 		412DA6B924C7B09C00D8A27A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6418368D158E87A738C46A03 /* Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +773,7 @@
 		};
 		412DA6BB24C7B09C00D8A27A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B14A4C443835A4B0D4DA386 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +793,7 @@
 		};
 		412DA6BC24C7B09C00D8A27A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2AC6C7CD88CB4C8AB1F4BE4 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
