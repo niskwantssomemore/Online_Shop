@@ -54,11 +54,7 @@ extension Auth {
 }
 
 extension Auth {
-<<<<<<< Updated upstream
-    struct RegusterUser: ​RequestRouter {
-=======
     struct RegisterUser: ​RequestRouter {
->>>>>>> Stashed changes
         let baseUrl: URL
         let method: HTTPMethod = .get
         let path: String = "registerUser.json"
@@ -118,11 +114,7 @@ extension Auth: AuthRequestFactory {
     }
     
     func registerUser(userId: Int, userName: String, password: String, email: String, gender: String, creditCard: String, bio: String, completionHandler: @escaping (DataResponse<RegisterResult>) -> Void) {
-<<<<<<< Updated upstream
-        let requesModel = RegusterUser(baseUrl: baseUrl, userId: userId, login: userName, password: password, email: email, gender: gender, creditCard: creditCard, bio: bio)
-=======
         let requesModel = RegisterUser(baseUrl: baseUrl, userId: userId, login: userName, password: password, email: email, gender: gender, creditCard: creditCard, bio: bio)
->>>>>>> Stashed changes
         self.request(request: requesModel, completionHandler: completionHandler)
     }
     

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41063AC624D1766600D89654 /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41063AC524D1766600D89654 /* RegisterResult.swift */; };
-		41063AC824D1768B00D89654 /* CommonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41063AC724D1768B00D89654 /* CommonResult.swift */; };
 		412DA68E24C7B09A00D8A27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DA68D24C7B09A00D8A27A /* AppDelegate.swift */; };
 		412DA69024C7B09A00D8A27A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DA68F24C7B09A00D8A27A /* SceneDelegate.swift */; };
 		412DA69724C7B09B00D8A27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412DA69624C7B09B00D8A27A /* Assets.xcassets */; };
@@ -25,11 +23,8 @@
 		41A552FB24CC408700903A40 /* ResponseCodable​.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552FA24CC408700903A40 /* ResponseCodable​.swift */; };
 		41A552FD24CC430B00903A40 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552FC24CC430B00903A40 /* AbstractRequestFactory.swift */; };
 		41A552FF24CC44A600903A40 /* ​RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A552FE24CC44A600903A40 /* ​RequestRouter.swift */; };
-<<<<<<< Updated upstream
-=======
 		41A712AF24D1954E00657896 /* CommonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A712AE24D1954D00657896 /* CommonResult.swift */; };
 		41A712B124D1956B00657896 /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A712B024D1956B00657896 /* RegisterResult.swift */; };
->>>>>>> Stashed changes
 		7FBC0DF00345FB1D34771DB9 /* Pods_Aleksei_Varaksin_Online_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FD38ED4EE283297E6589F6 /* Pods_Aleksei_Varaksin_Online_Shop.framework */; };
 		CFAE7616E23FD724749B342F /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9FA82FE448AC199C38F208 /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework */; };
 		EBE51E41EB35D5C6EA90D04E /* Pods_Aleksei_Varaksin_Online_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BA58B527B0A31042CB59A9 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework */; };
@@ -56,11 +51,6 @@
 		159BAFB7B0F00F61CE2C6DAB /* Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig"; sourceTree = "<group>"; };
 		1B14A4C443835A4B0D4DA386 /* Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests/Pods-Aleksei_Varaksin_Online_Shop-Aleksei_Varaksin_Online_ShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		32FD38ED4EE283297E6589F6 /* Pods_Aleksei_Varaksin_Online_Shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aleksei_Varaksin_Online_Shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< Updated upstream
-		41063AC524D1766600D89654 /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = SOURCE_ROOT; };
-		41063AC724D1768B00D89654 /* CommonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResult.swift; sourceTree = SOURCE_ROOT; };
-=======
->>>>>>> Stashed changes
 		412DA68A24C7B09A00D8A27A /* Aleksei_Varaksin_Online_Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aleksei_Varaksin_Online_Shop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		412DA68D24C7B09A00D8A27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		412DA68F24C7B09A00D8A27A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,11 +73,8 @@
 		41A552FA24CC408700903A40 /* ResponseCodable​.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseCodable​.swift"; sourceTree = "<group>"; };
 		41A552FC24CC430B00903A40 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
 		41A552FE24CC44A600903A40 /* ​RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "​RequestRouter.swift"; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-=======
 		41A712AE24D1954D00657896 /* CommonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommonResult.swift; path = Aleksei_Varaksin_Online_Shop/App/CommonResult.swift; sourceTree = SOURCE_ROOT; };
 		41A712B024D1956B00657896 /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterResult.swift; path = Aleksei_Varaksin_Online_Shop/App/RegisterResult.swift; sourceTree = SOURCE_ROOT; };
->>>>>>> Stashed changes
 		43D6763FA694F965221F96E8 /* Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_ShopTests/Pods-Aleksei_Varaksin_Online_ShopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61A4C38E179E5A5217A44F5F /* Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig"; sourceTree = "<group>"; };
 		6418368D158E87A738C46A03 /* Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_ShopTests/Pods-Aleksei_Varaksin_Online_ShopTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,13 +226,8 @@
 			children = (
 				41A552EC24CC36D300903A40 /* ​User.swift */,
 				41A552EA24CC36C000903A40 /* LoginResult.swift */,
-<<<<<<< Updated upstream
-				41063AC524D1766600D89654 /* RegisterResult.swift */,
-				41063AC724D1768B00D89654 /* CommonResult.swift */,
-=======
 				41A712AE24D1954D00657896 /* CommonResult.swift */,
 				41A712B024D1956B00657896 /* RegisterResult.swift */,
->>>>>>> Stashed changes
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -536,22 +518,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A552FD24CC430B00903A40 /* AbstractRequestFactory.swift in Sources */,
-<<<<<<< Updated upstream
-				41063AC824D1768B00D89654 /* CommonResult.swift in Sources */,
-=======
 				41A712AF24D1954E00657896 /* CommonResult.swift in Sources */,
->>>>>>> Stashed changes
 				41A552F424CC3C7600903A40 /* ​RequestFactory.swift in Sources */,
 				41A552ED24CC36D300903A40 /* ​User.swift in Sources */,
 				41A552EB24CC36C000903A40 /* LoginResult.swift in Sources */,
 				412DA68E24C7B09A00D8A27A /* AppDelegate.swift in Sources */,
-<<<<<<< Updated upstream
-				41063AC624D1766600D89654 /* RegisterResult.swift in Sources */,
-				41A552F924CC3F8000903A40 /* ErrorParser.swift in Sources */,
-=======
 				41A552F924CC3F8000903A40 /* ErrorParser.swift in Sources */,
 				41A712B124D1956B00657896 /* RegisterResult.swift in Sources */,
->>>>>>> Stashed changes
 				41A552F224CC39FB00903A40 /* ​Auth.swift in Sources */,
 				412DA69024C7B09A00D8A27A /* SceneDelegate.swift in Sources */,
 				41A552FF24CC44A600903A40 /* ​RequestRouter.swift in Sources */,
