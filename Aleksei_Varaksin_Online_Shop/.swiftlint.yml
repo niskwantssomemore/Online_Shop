@@ -1,0 +1,11 @@
+opt_in_rules:
+  - anyobject_protocol
+  - array_init
+  - attributes
+
+disabled_rules:
+  - line_length
+  - identifier_name
+  - type_name
+  - force_cast
+  - type_body_length

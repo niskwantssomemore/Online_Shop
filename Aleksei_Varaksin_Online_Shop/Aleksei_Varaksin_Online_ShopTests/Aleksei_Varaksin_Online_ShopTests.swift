@@ -87,5 +87,70 @@ class Aleksei_Varaksin_Online_ShopTests: XCTestCase {
             
         }
     }
+    
+    func testGetProductsList() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.getProductsList(categoryId: 1) { (response: DataResponse<GetProductsListResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testGetProduct() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.getProduct(productId: 1) { (response: DataResponse<GetProductResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testGetReviews() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.getReviews(productId: 1) { (response: DataResponse<GetReviewsResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testAddReview() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.addReview(productId: 1, text: "5/5") { (response: DataResponse<CommonResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
+    
+    func testDeleteReview() {
+        let auth = Auth(errorParser: errorParser, sessionManager: SessionManager())
+        auth.deleteReview(productId: 1) { (response: DataResponse<CommonResult>) in
+            switch response.result {
+            case .success(_):
+                XCTAssert(true)
+            case .failure(_):
+                XCTFail()
+            }
+            
+        }
+    }
 
 }

@@ -7,6 +7,7 @@ target 'Aleksei_Varaksin_Online_Shop' do
 
   # Pods for Aleksei_Varaksin_Online_Shop
   pod 'Alamofire', '~> 4.9.1'
+  pod 'SwiftLint', '~> 0.39.2'
 
   target 'Aleksei_Varaksin_Online_ShopTests' do
     inherit! :search_paths

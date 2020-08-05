@@ -13,7 +13,7 @@ class Auth: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: SessionManager
     let queue: DispatchQueue
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: "http://127.0.0.1:8080/")!
     init(errorParser: AbstractErrorParser, sessionManager: SessionManager, queue: DispatchQueue = DispatchQueue.global(qos: .utility)) {
         self.errorParser = errorParser
         self.sessionManager = sessionManager
@@ -107,6 +107,88 @@ extension Auth {
     }
 }
 
+extension Auth {
+    struct GetProductsList: ​RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .get
+        let path: String = "getProductsList.json"
+        
+        let categoryId: Int
+        
+      var parameters: Parameters? {
+        return [
+          "category_id": categoryId
+        ]
+      }
+    }
+}
+
+extension Auth {
+    struct GetProduct: ​RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .get
+        let path: String = "getProduct.json"
+        
+        let productId: Int
+        
+      var parameters: Parameters? {
+        return [
+          "product_id": productId
+        ]
+      }
+    }
+}
+
+extension Auth {
+    struct GetReviews: ​RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .get
+        let path: String = "getReviews.json"
+        
+        let productId: Int
+        
+      var parameters: Parameters? {
+        return [
+          "product_id": productId
+        ]
+      }
+    }
+}
+
+extension Auth {
+    struct AddReview: ​RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .get
+        let path: String = "addReview.json"
+        
+        let productId: Int
+        let text: String
+        
+      var parameters: Parameters? {
+        return [
+          "product_id": productId,
+          "text": text
+        ]
+      }
+    }
+}
+
+extension Auth {
+    struct DeleteReview: ​RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .get
+        let path: String = "deleteReview.json"
+        
+        let productId: Int
+        
+      var parameters: Parameters? {
+        return [
+          "product_id": productId
+        ]
+      }
+    }
+}
+
 extension Auth: AuthRequestFactory {
     func logout(userId: Int, completionHandler: @escaping (DataResponse<CommonResult>) -> Void) {
         let requestModel = Logout(baseUrl: baseUrl, userId: userId)
@@ -125,6 +207,31 @@ extension Auth: AuthRequestFactory {
     
     func login(userName: String, password: String, completionHandler: @escaping (DataResponse<LoginResult>) -> Void) {
         let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
+        self.request(request: requestModel, completionHandler: completionHandler)
+    }
+    
+    func getProductsList(categoryId: Int, completionHandler: @escaping (DataResponse<GetProductsListResult>) -> Void) {
+        let requestModel = GetProductsList(baseUrl: baseUrl, categoryId: categoryId)
+        self.request(request: requestModel, completionHandler: completionHandler)
+    }
+    
+    func getProduct(productId: Int, completionHandler: @escaping (DataResponse<GetProductResult>) -> Void) {
+        let requestModel = GetProduct(baseUrl: baseUrl, productId: productId)
+        self.request(request: requestModel, completionHandler: completionHandler)
+    }
+    
+    func getReviews(productId: Int, completionHandler: @escaping (DataResponse<GetReviewsResult>) -> Void) {
+        let requestModel = GetReviews(baseUrl: baseUrl, productId: productId)
+        self.request(request: requestModel, completionHandler: completionHandler)
+    }
+    
+    func addReview(productId: Int, text: String, completionHandler: @escaping (DataResponse<CommonResult>) -> Void) {
+        let requestModel = AddReview(baseUrl: baseUrl, productId: productId, text: text)
+        self.request(request: requestModel, completionHandler: completionHandler)
+    }
+    
+    func deleteReview(productId: Int, completionHandler: @escaping (DataResponse<CommonResult>) -> Void) {
+        let requestModel = DeleteReview(baseUrl: baseUrl, productId: productId)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
