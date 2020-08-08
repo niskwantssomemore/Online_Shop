@@ -26,15 +26,15 @@ extension ​RequestRouter {
     var fullUrl: URL {
         return baseUrl.appendingPathComponent(path)
     }
-    
+
     var encoding: RequestRouterEncoding {
         return .url
     }
-    
+
     func asURLRequest() throws -> URLRequest {
         var urlRequest = URLRequest(url: fullUrl)
         urlRequest.httpMethod = method.rawValue
-        
+
         switch self.encoding {
         case .url:
             return try URLEncoding.default.encode(urlRequest, with: parameters)

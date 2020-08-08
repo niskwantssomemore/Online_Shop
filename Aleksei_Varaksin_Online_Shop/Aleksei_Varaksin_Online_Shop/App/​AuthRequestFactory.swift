@@ -18,5 +18,5 @@ protocol AuthRequestFactory {
     func getProduct(productId: Int, completionHandler: @escaping(DataResponse<GetProductResult>) -> Void)
     func getReviews(productId: Int, completionHandler: @escaping(DataResponse<GetReviewsResult>) -> Void)
     func addReview(productId: Int, text: String, completionHandler: @escaping(DataResponse<CommonResult>) -> Void)
-    func deleteReview(productId: Int, completionHandler: @escaping(DataResponse<CommonResult>) -> Void)
+    func deleteReview(reviewId: Int, completionHandler: @escaping(DataResponse<CommonResult>) -> Void)
 }

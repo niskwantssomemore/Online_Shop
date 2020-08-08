@@ -13,7 +13,7 @@ class RequestFactory {
     func makeErrorParser() -> AbstractErrorParser {
         return ErrorParser()
     }
-    
+
     lazy var commonSession: SessionManager = {
         let configuration = URLSessionConfiguration.default
         configuration.httpShouldSetCookies = false
@@ -21,9 +21,9 @@ class RequestFactory {
         let manager = SessionManager(configuration: configuration)
         return manager
     }()
-    
+
     let sessionQueue = DispatchQueue.global(qos: .utility)
-    
+
     func makeAuthRequestFactory() -> AuthRequestFactory {
         let errorParser = makeErrorParser()
         return Auth(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
