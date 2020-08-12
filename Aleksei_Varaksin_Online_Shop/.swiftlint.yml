@@ -4,8 +4,8 @@ opt_in_rules:
   - attributes
 
 disabled_rules:
-  - line_length
-  - identifier_name
   - type_name
+  - identifier_name
   - force_cast
   - type_body_length
+  - line_length
