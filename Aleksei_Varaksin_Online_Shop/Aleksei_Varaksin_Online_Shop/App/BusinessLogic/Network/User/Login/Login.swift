@@ -15,7 +15,7 @@ struct LoginRequest: RequestRouter {
   let password: String
 
   let method: HTTPMethod = .post
-  let path: String = "login.json"
+  let path: String = "login"
   var parameters: Parameters? {
     return [
       "username": login,

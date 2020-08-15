@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		411468E024E59C0000C15B98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411468DF24E59C0000C15B98 /* AppDelegate.swift */; };
 		411468E224E59C0000C15B98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411468E124E59C0000C15B98 /* SceneDelegate.swift */; };
-		411468E424E59C0000C15B98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411468E324E59C0000C15B98 /* ViewController.swift */; };
 		411468E724E59C0000C15B98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411468E524E59C0000C15B98 /* Main.storyboard */; };
 		411468E924E59C0100C15B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411468E824E59C0100C15B98 /* Assets.xcassets */; };
 		411468EC24E59C0100C15B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411468EA24E59C0100C15B98 /* LaunchScreen.storyboard */; };
@@ -35,6 +34,8 @@
 		416ACD2D24E7FA080023A73D /* RemoveReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416ACD2C24E7FA080023A73D /* RemoveReviewResponse.swift */; };
 		416ACD3024E7FC2B0023A73D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416ACD2F24E7FC2B0023A73D /* User.swift */; };
 		416ACD3224E7FC590023A73D /* UserProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416ACD3124E7FC590023A73D /* UserProfileData.swift */; };
+		41A4842A24E8049300431607 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4842924E8049300431607 /* SignUpViewController.swift */; };
+		41A4842C24E804A300431607 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4842B24E804A300431607 /* SignInViewController.swift */; };
 		4811E64D028A198D69B83E92 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A5F2457DA73F7E89226C14 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework */; };
 		5C9DA34C338A3C7BC299F4B7 /* Pods_Aleksei_Varaksin_Online_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF60F3920261880E007A94C /* Pods_Aleksei_Varaksin_Online_Shop.framework */; };
 		E9DEBA5F561B893A3EC2609C /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309191E3E1D823C776399D1B /* Pods_Aleksei_Varaksin_Online_Shop_Aleksei_Varaksin_Online_ShopUITests.framework */; };
@@ -62,7 +63,6 @@
 		411468DC24E59C0000C15B98 /* Aleksei_Varaksin_Online_Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aleksei_Varaksin_Online_Shop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411468DF24E59C0000C15B98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		411468E124E59C0000C15B98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		411468E324E59C0000C15B98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		411468E624E59C0000C15B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		411468E824E59C0100C15B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411468EB24E59C0100C15B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,6 +93,8 @@
 		416ACD2C24E7FA080023A73D /* RemoveReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReviewResponse.swift; sourceTree = "<group>"; };
 		416ACD2F24E7FC2B0023A73D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		416ACD3124E7FC590023A73D /* UserProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileData.swift; sourceTree = "<group>"; };
+		41A4842924E8049300431607 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		41A4842B24E804A300431607 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		4B9C968BBF7D0EB07A1B0A71 /* Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop.release.xcconfig"; sourceTree = "<group>"; };
 		68A5F2457DA73F7E89226C14 /* Pods_Aleksei_Varaksin_Online_ShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aleksei_Varaksin_Online_ShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FEC232F82B8C37F252DB41A /* Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig"; path = "Target Support Files/Pods-Aleksei_Varaksin_Online_Shop/Pods-Aleksei_Varaksin_Online_Shop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +175,6 @@
 				4114691124E5ADC600C15B98 /* Core */,
 				4114691224E5ADD000C15B98 /* Resources */,
 				4114691324E5ADD900C15B98 /* Environments */,
-				411468E324E59C0000C15B98 /* ViewController.swift */,
 			);
 			path = Aleksei_Varaksin_Online_Shop;
 			sourceTree = "<group>";
@@ -272,6 +273,8 @@
 		4114691824E5AE9B00C15B98 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				41A4842824E8046300431607 /* SignUp */,
+				41A4842724E8045700431607 /* SignIn */,
 				411468E524E59C0000C15B98 /* Main.storyboard */,
 			);
 			path = Flows;
@@ -400,6 +403,22 @@
 				416ACD3124E7FC590023A73D /* UserProfileData.swift */,
 			);
 			path = Structure;
+			sourceTree = "<group>";
+		};
+		41A4842724E8045700431607 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				41A4842B24E804A300431607 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		41A4842824E8046300431607 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				41A4842924E8049300431607 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		F99283CC435DF1E76AE22407 /* Frameworks */ = {
@@ -669,13 +688,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				411468E424E59C0000C15B98 /* ViewController.swift in Sources */,
 				4114691E24E5B25800C15B98 /* RequestRouter.swift in Sources */,
 				416ACD2924E7F9F20023A73D /* AddReviewResponse.swift in Sources */,
 				411468E024E59C0000C15B98 /* AppDelegate.swift in Sources */,
 				416ACD2D24E7FA080023A73D /* RemoveReviewResponse.swift in Sources */,
 				416ACD2124E7F96C0023A73D /* RegisterResponse.swift in Sources */,
 				416ACD0F24E7F3600023A73D /* Logout.swift in Sources */,
+				41A4842A24E8049300431607 /* SignUpViewController.swift in Sources */,
 				416ACD1824E7F5120023A73D /* ApproveReview.swift in Sources */,
 				411468E224E59C0000C15B98 /* SceneDelegate.swift in Sources */,
 				416ACD2B24E7F9FD0023A73D /* ApproveReviewResponse.swift in Sources */,
@@ -689,6 +708,7 @@
 				416ACD0924E7F2750023A73D /* Register.swift in Sources */,
 				4114691C24E5B1FC00C15B98 /* ErrorParser.swift in Sources */,
 				416ACD1224E7F3A80023A73D /* ChangeUserProfile.swift in Sources */,
+				41A4842C24E804A300431607 /* SignInViewController.swift in Sources */,
 				416ACD3224E7FC590023A73D /* UserProfileData.swift in Sources */,
 				416ACD2524E7F9870023A73D /* LoginResponse.swift in Sources */,
 				416ACD1B24E7F5820023A73D /* RemoveReview.swift in Sources */,

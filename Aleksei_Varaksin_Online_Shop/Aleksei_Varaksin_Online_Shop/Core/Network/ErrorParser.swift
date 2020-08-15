@@ -24,7 +24,6 @@ protocol ErrorParser {
 }
 
 class ErrorParserImplementation: ErrorParser {
-
   func parse(_ result: Error) -> AppError {
     let error = result as NSError
     switch error.code {
