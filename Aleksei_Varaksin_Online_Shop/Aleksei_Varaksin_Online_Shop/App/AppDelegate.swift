@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Aleksei_Varaksin_Online_Shop
 //
-//  Created by Aleksei Niskarav on 22/07/2020.
+//  Created by Aleksei Niskarav on 13.08.2020.
 //  Copyright © 2020 Aleksei Niskarav. All rights reserved.
 //
 
@@ -11,16 +11,16 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let requestFactory = RequestFactory()
+    let networkServiceFactory = NetworkServiceFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let auth = requestFactory.makeAuthRequestFactory()
-        auth.login(userName: "Somebody", password: "mypassword") { response in
-            switch response.result {
-            case .success(let login):
-                print(login)
-            case .failure(let error):
-                print(error.localizedDescription)
+        let auth = networkServiceFactory.makeAuthService()
+        auth.login(login: "somebody", password: "somebody") { response in
+            switch response {
+            case .some(let user):
+                print(user.login)
+            case .none:
+                print("Error")
             }
         }
         return true
