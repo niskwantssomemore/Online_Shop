@@ -7,7 +7,6 @@
 //
 
 struct UserProfileData {
-
   let userID: Int
   let login: String
   let password: String
@@ -15,5 +14,4 @@ struct UserProfileData {
   let gender: String
   let creditCardNumber: String
   let bio: String
-
 }

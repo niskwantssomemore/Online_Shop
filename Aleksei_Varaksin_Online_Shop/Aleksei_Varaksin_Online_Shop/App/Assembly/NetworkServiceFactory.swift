@@ -10,7 +10,7 @@ import Alamofire
 
 class NetworkServiceFactory {
 
-  private let baseUrl = URL(string: "http://localhost:8080/")!
+  private let baseUrl = URL(string: "http://127.0.0.1:8080/")!
   private let errorParser = ErrorParserImplementation()
 
   private(set) lazy var commonSessionManager: SessionManager = {
@@ -52,5 +52,21 @@ class NetworkServiceFactory {
 
   func makeRemoveReviewService() -> RemoveReviewService {
     return RemoveReviewServiceImplementation(baseURL: baseUrl, networkService: networkService)
+  }
+
+  func makeAddItemToBasketService() -> AddItemToBasketService {
+    return AddItemToBasketServiceImplementation(baseURL: baseUrl, networkService: networkService)
+  }
+
+  func makeRemoveItemFromBasketService() -> RemoveItemFromBasketService {
+    return RemoveItemFromBasketServiceImplementation(baseURL: baseUrl, networkService: networkService)
+  }
+
+  func makeGetItemsListService() -> GetItemsListService {
+    return GetItemsListServiceImplementation(baseURL: baseUrl, networkService: networkService)
+  }
+
+  func makeGetUsersBasketService() -> GetUsersBasketService {
+    return GetUsersBasketServiceImplementation(baseURL: baseUrl, networkService: networkService)
   }
 }
