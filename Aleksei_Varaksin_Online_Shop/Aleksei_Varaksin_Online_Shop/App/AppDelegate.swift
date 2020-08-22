@@ -14,15 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let networkServiceFactory = NetworkServiceFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let auth = networkServiceFactory.makeAuthService()
-        auth.login(login: "somebody", password: "somebody") { response in
-            switch response {
-            case .some(let user):
-                print(user.login)
-            case .none:
-                print("Error")
-            }
-        }
         return true
     }
 
