@@ -12,20 +12,23 @@ class SignInViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
 
+    private let authService = NetworkServiceFactory().makeAuthService()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signInButtonPressed(_ sender: Any) {
+        if (loginTextField.text != "" && passwordTextField.text != "") {
+            let login = loginTextField.text!
+            let password = passwordTextField.text!
+            authService.login(login: login, password: password) { [weak self] response in
+                self?.performSegue(withIdentifier: "SigninProfileVC", sender: self)
+            }
+        }
     }
-    */
 
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "SigninSignupVC", sender: self)
+    }
 }
