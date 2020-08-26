@@ -13,15 +13,17 @@ class BasketTableViewCell: UITableViewCell {
     @IBOutlet var countLabel: UILabel!
     @IBOutlet var totalPriceLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configure(with itemInBasket: ItemInBasket) {
+        nameLabel.text = itemInBasket.productName
+        totalPriceLabel.text = "$\(itemInBasket.price * itemInBasket.quantity)"
+        countLabel.text = "\(itemInBasket.quantity)"
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        nameLabel.text = ""
+        totalPriceLabel.text = ""
+        countLabel.text = ""
+        selectionStyle = .none
     }
-
 }

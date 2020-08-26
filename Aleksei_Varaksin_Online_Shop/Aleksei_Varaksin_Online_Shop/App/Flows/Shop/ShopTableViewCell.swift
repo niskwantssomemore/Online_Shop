@@ -12,15 +12,15 @@ class ShopTableViewCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configure(with item: Item) {
+      nameLabel.text = item.productName
+     priceLabel.text = "$\(item.price)"
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func prepareForReuse() {
+      super.prepareForReuse()
+      nameLabel.text = ""
+      priceLabel.text = ""
+      selectionStyle = .none
     }
-
 }
